@@ -11,7 +11,6 @@ RUN mkdir -p /etc/nginx/certs \
     touch /etc/nginx/certs/cert.pem
 
 COPY nginx.conf /etc/nginx/
-COPY mime.types /etc/nginx/
 COPY start_nginx /start_nginx
 
 RUN chmod +x /start_nginx
