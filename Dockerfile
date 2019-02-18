@@ -6,7 +6,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN touch /etc/nginx/certs/cert.key \
+RUN mkdir -p /etc/nginx/certs
+    touch /etc/nginx/certs/cert.key \
     touch /etc/nginx/certs/cert.pem
 
 COPY nginx.conf /etc/nginx/
