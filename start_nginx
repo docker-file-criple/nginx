@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir -p /var/nginx/DropLocation
+/usr/sbin/nginx -c /etc/nginx/nginx.conf -g "daemon off;"
